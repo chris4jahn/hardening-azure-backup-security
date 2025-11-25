@@ -22,7 +22,7 @@ Connect-AzAccount
 $VaultName = "bofhbackup-vault01" #fetch automatically
 $Subscription = "sub-mvp-cf-2025" #fetch automatically
 $ResourceGroup = "bofh-backupvault01" #fetch automatically
-$SubscriptionId = "33d063dc-2392-4d6f-ba58-3128b84aa2fc" #fetch automatically
+$SubscriptionId = "00000000-1111-2222-3333-444444444444" #fetch automatically
 $isVaultSoftDeleteFeatureEnabled = "true" #this paramater is based on Vault soft delete feature is enabled or not in this region.
 
 Select-AzSubscription $Subscription
