@@ -8,8 +8,8 @@ This repository provides Infrastructure as Code (IaC) templates, CLI scripts, an
 
 ## 🎯 Features
 
-- **Terraform Module**: Production-ready Recovery Services Vault with security hardening
 - **Azure CLI Scripts**: Automated vault creation, configuration, and deletion workflows
+- **PowerShell Scripts**: Scripts for handling vaults with protected items
 - **Security Best Practices**: Soft delete, cross-region restore, and geo-redundancy
 - **Protected Item Management**: Scripts for handling vaults with protected items
 - **Multi-User Authorization**: Guidance for MUA-enabled vault operations
@@ -19,9 +19,11 @@ This repository provides Infrastructure as Code (IaC) templates, CLI scripts, an
 ```
 hardening-azure-backup-security/
 ├── README.md                    # This file
+├── LICENSE                      # MIT License
 ├── CLI/                         # Azure CLI and PowerShell scripts
 │   ├── commands.sh             # Vault creation and deletion commands
 │   └── Delete_bofhbackup-vault01.ps1  # PowerShell vault cleanup script
+└── Media/                       # slides
 ```
 
 ## 🚀 Quick Start
@@ -102,6 +104,8 @@ az backup vault create \
 
 **Note**: Vaults with MUA enabled require additional authorization for critical operations.
 
+## 📖 Usage Examples
+
 ### Deleting a Vault with Protected Items (PowerShell)
 
 When a vault contains protected items, you must first disable protection and delete backup data:
@@ -180,10 +184,8 @@ For issues and questions:
 
 ## 🏷️ Tags
 
-`azure` `backup` `recovery-services` `infrastructure-as-code` `security` `disaster-recovery` `azure-cli` `powershell`
+`azure` `backup` `recovery-services` `security` `disaster-recovery` `azure-cli` `powershell`
 
 ---
 
-**Last Updated**: November 2025  
-**Terraform Module Version**: 1.0.0  
-**Azure Provider Version**: >= 4.0.0
+**Last Updated**: November 2025
