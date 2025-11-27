@@ -19,3 +19,7 @@ I want to delete bofh-rsvault02. There are protected items in the recovery servi
 PowerShell Example (see /hardening-azure-backup-security/CLI/Delete_bofhbackup-vault01.ps1)
 
 ### Demo Part 3: Delete Recovery Services Vault with Multi User Authorization using Azure PowerShell not possible
+# create a Resource Guard in different Tenant - Check the critical actions
+# Add the Resource Guard to the Recovery Services Vault
+# Talk about PIM and why deletion is not possible with MUA enabled
+# try to delete the vault
